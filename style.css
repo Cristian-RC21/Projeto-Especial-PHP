@@ -1,0 +1,106 @@
+/* Estilo para o Body e a Página Principal */
+body {
+    display: flex;               /* Flexbox */
+    justify-content: center;     /* Alinha horizontalmente */
+    align-items: center;         /* Alinha verticalmente */
+    height: 100vh;               /* Garante que a tela tenha 100% de altura */
+    margin: 0;                   /* Remove as margens padrão do body */
+    font-family: Arial, sans-serif; /* Definir uma fonte mais limpa */
+    background-color: #f4f4f4;   /* Cor de fundo suave */
+}
+
+/* Centralização do container principal */
+.login-container, .admin-dashboard, .agendar-container, .monitoramento-container, .dados-computados-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;  /* Tamanho máximo para as caixas */
+    margin: 20px;      /* Espaçamento entre as caixas */
+}
+
+/* Título de páginas */
+h2 {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulários e Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group input, .input-group textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Para garantir que o padding não afete a largura total */
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Botão de Voltar */
+.btn-voltar {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-voltar:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilo para o botão de "Apagar Todos os Dados" dentro do painel de administração */
+.btn-apagar {
+    background-color: #ff4d4d;  /* Cor vermelha */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;  /* Garante que o botão ocupe uma linha própria */
+    margin: 20px auto;  /* Centraliza o botão na tela */
+    width: 50%;  /* Ajusta a largura do botão para 50% do container */
+    text-align: center;  /* Centraliza o texto dentro do botão */
+}
+
+.btn-apagar:hover {
+    background-color: #e03e3e;  /* Cor mais escura quando o mouse passa sobre o botão */
+}
+
+
+
